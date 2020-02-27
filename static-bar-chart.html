@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+</head>
+<body>
+	<script>
+      	var width = 200, height = 400;
+		var svg = d3.select('body')
+        .append('svg')
+        .attr('width', width)
+        .attr('height', height)
+        .attr('fill', '#ffff23')
+        
+        var g = svg.append('g')
+        		.attr('fill', 'orange')
+        
+        g.append('rect')
+        .attr('width', '60')
+        .attr('height', '15')
+        .attr('x', '0')
+        .attr('y', '0')
+
+        g.append('text')
+        .attr('x', '40')
+        .attr('y', '12')
+        .attr('fill', 'white')
+        .text('60')
+       
+        g.append('rect')
+        .attr('width', '120')
+        .attr('height', '15')
+        .attr('x', '0')
+        .attr('y', '20')
+
+        g.append('text')
+        .attr('x', '90')
+        .attr('y', '32')
+        .attr('fill', 'white')
+        .text('120')
+        
+        g.append('rect')
+        .attr('width', '180')
+        .attr('height', '15')
+        .attr('x', '0')
+        .attr('y', '40')
+
+        g.append('text')
+        .attr('x', '150')
+        .attr('y', '52')
+        .attr('fill', 'white')
+        .text('180')
+        
+	</script>
+</body>
+</html>
